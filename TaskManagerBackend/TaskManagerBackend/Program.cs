@@ -10,7 +10,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
         policy.WithOrigins(
             "http://localhost:3000", // for local dev
-            "https://task-manager-jmgk.vercel.app" // your actual Vercel app
+            "https://task-manager-jmgk.vercel.app/" // your actual Vercel app
         )
         .AllowAnyMethod()
         .AllowAnyHeader());
